@@ -1,0 +1,1 @@
+Just above Definition 5.3, it is claimed that R is a QPER if and only if R^<- and R^-> are PERs. The backward implication does not in fact hold. Thanks to Oleg Grenrus for pointing this out: https://github.com/agda/cubical/pull/940.

@@ -1,0 +1,2 @@
+- Lemma 2.1.26 was not true for the original definition of Trans+ in Definition 2.1.25, as the ability to compose any open box in a PER does not imply transitivity.
+- The definitions of type systems (Examples 2.1.27, 3.1.32, 6.2.22, 9.1.13, and 14.4.3) glossed over the need to consistently use the same relation as the interpretation of each type name introduced; this is necessary because unicity is not known at this stage.
