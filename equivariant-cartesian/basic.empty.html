@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html><head><meta charset="utf-8"><title>basic.empty</title><link rel="stylesheet" href="Agda.css"></head><body><pre class="Agda"><a id="1" class="Comment">{-
+
+Empty type and negation in the ambient type theory.
+
+-}</a>
+<a id="61" class="Keyword">module</a> <a id="68" href="basic.empty.html" class="Module">basic.empty</a> <a id="80" class="Keyword">where</a>
+
+<a id="87" class="Keyword">open</a> <a id="92" class="Keyword">import</a> <a id="99" href="basic.prelude.html" class="Module">basic.prelude</a>
+
+<a id="114" class="Keyword">private</a> <a id="122" class="Keyword">variable</a>
+  <a id="133" href="basic.empty.html#133" class="Generalizable">ℓ</a> <a id="135" class="Symbol">:</a> <a id="137" href="Agda.Primitive.html#742" class="Postulate">Level</a>
+
+<a id="144" class="Comment">--↓ Empty type.</a>
+
+<a id="161" class="Keyword">data</a> <a id="𝟘"></a><a id="166" href="basic.empty.html#166" class="Datatype">𝟘</a> <a id="168" class="Symbol">:</a> <a id="170" href="basic.prelude.html#227" class="Primitive">Type</a> <a id="175" class="Keyword">where</a>
+
+<a id="182" class="Comment">--↓ Elimination from the empty type.</a>
+
+<a id="𝟘-elim"></a><a id="220" href="basic.empty.html#220" class="Function">𝟘-elim</a> <a id="227" class="Symbol">:</a> <a id="229" class="Symbol">{</a><a id="230" href="basic.empty.html#230" class="Bound">A</a> <a id="232" class="Symbol">:</a> <a id="234" href="basic.empty.html#166" class="Datatype">𝟘</a> <a id="236" class="Symbol">→</a> <a id="238" href="basic.prelude.html#227" class="Primitive">Type</a> <a id="243" href="basic.empty.html#133" class="Generalizable">ℓ</a><a id="244" class="Symbol">}</a> <a id="246" class="Symbol">→</a> <a id="248" class="Symbol">(</a><a id="249" href="basic.empty.html#249" class="Bound">v</a> <a id="251" class="Symbol">:</a> <a id="253" href="basic.empty.html#166" class="Datatype">𝟘</a><a id="254" class="Symbol">)</a> <a id="256" class="Symbol">→</a> <a id="258" href="basic.empty.html#230" class="Bound">A</a> <a id="260" href="basic.empty.html#249" class="Bound">v</a>
+<a id="262" href="basic.empty.html#220" class="Function">𝟘-elim</a> <a id="269" class="Symbol">()</a>
+
+<a id="273" class="Comment">--↓ Non-dependent elimination from the empty type.</a>
+
+<a id="𝟘-rec"></a><a id="325" href="basic.empty.html#325" class="Function">𝟘-rec</a> <a id="331" class="Symbol">:</a> <a id="333" class="Symbol">{</a><a id="334" href="basic.empty.html#334" class="Bound">A</a> <a id="336" class="Symbol">:</a> <a id="338" href="basic.prelude.html#227" class="Primitive">Type</a> <a id="343" href="basic.empty.html#133" class="Generalizable">ℓ</a><a id="344" class="Symbol">}</a> <a id="346" class="Symbol">→</a> <a id="348" href="basic.empty.html#166" class="Datatype">𝟘</a> <a id="350" class="Symbol">→</a> <a id="352" href="basic.empty.html#334" class="Bound">A</a>
+<a id="354" href="basic.empty.html#325" class="Function">𝟘-rec</a> <a id="360" class="Symbol">()</a>
+
+<a id="364" class="Comment">--↓ Negation of a type.</a>
+
+<a id="¬_"></a><a id="389" href="basic.empty.html#389" class="Function Operator">¬_</a> <a id="392" class="Symbol">:</a> <a id="394" href="basic.prelude.html#227" class="Primitive">Type</a> <a id="399" href="basic.empty.html#133" class="Generalizable">ℓ</a> <a id="401" class="Symbol">→</a> <a id="403" href="basic.prelude.html#227" class="Primitive">Type</a> <a id="408" href="basic.empty.html#133" class="Generalizable">ℓ</a>
+<a id="410" href="basic.empty.html#389" class="Function Operator">¬</a> <a id="412" href="basic.empty.html#412" class="Bound">A</a> <a id="414" class="Symbol">=</a> <a id="416" href="basic.empty.html#412" class="Bound">A</a> <a id="418" class="Symbol">→</a> <a id="420" href="basic.empty.html#166" class="Datatype">𝟘</a>
+</pre></body></html>

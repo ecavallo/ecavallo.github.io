@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html><head><meta charset="utf-8"><title>index</title><link rel="stylesheet" href="Agda.css"></head><body><pre class="Agda"><a id="1" class="Comment">{-
+
+------------------------------------------------------------------------------------------
+Formalization of an equivariant cartesian cubical set model of type theory
+------------------------------------------------------------------------------------------
+
+This formalization accompanies the article
+
+  The equivariant model structure on cartesian cubical sets.
+  Steve Awodey, Evan Cavallo, Thierry Coquand, Emily Riehl, &amp; Christian Sattler
+
+The contents of the formalization are outlined in Appendix A of the article.
+
+The formalization defines a model of homotopy type theory inside an extensional type
+theory augmented with a flat modality and axioms postulating *shapes* (among them an
+*interval*) and a cofibration classifier. The results can in particular be externalized in
+the category of cartesian cubical sets.
+
+The code has been tested with Agda version 2.6.4.
+The source is available at
+
+  github.com/ecavallo/equivariant-cartesian
+
+and there is an HTML interface at
+
+  ecavallo.github.io/equivariant-cartesian
+
+For reference (see the file equivariant.agda-lib in the source), the formalization is
+compiled with the flags
+
+  --with-K
+  --cohesion --flat-split
+  --no-import-sorts
+  --rewriting
+
+In particular, the --with-K flag enables axiom K (uniqueness of identity proofs), while
+the --cohesion and --flat-split flags enable the flat modality (see the module
+axiom.flat for more information).
+
+-}</a>
+
+<a id="1420" class="Keyword">module</a> <a id="1427" href="index.html" class="Module">index</a> <a id="1433" class="Keyword">where</a>
+
+<a id="1440" class="Comment">--↓ The summary module defines the interpretation of homotopy type theory: the judgments,</a>
+<a id="1530" class="Comment">--↓ type formers (including universes), and the univalence axiom. Most results are</a>
+<a id="1613" class="Comment">--↓ imported from elsewhere in the formalization.</a>
+
+<a id="1664" class="Keyword">import</a> <a id="1671" href="summary.html" class="Module">summary</a>
+
+<a id="1680" class="Comment">--↓ The prelude: basic constructs of the ambient type theory, such as sigma types, natural</a>
+<a id="1771" class="Comment">--↓ numbers, isomorphisms, etc.</a>
+
+<a id="1804" class="Keyword">import</a> <a id="1811" href="basic.html" class="Module">basic</a>
+
+<a id="1818" class="Comment">--↓ Syntax for the internal model of extensional type theory where contexts are</a>
+<a id="1898" class="Comment">--↓ interpreted as types and types as families in some universe.</a>
+
+<a id="1964" class="Keyword">import</a> <a id="1971" href="internal-extensional-type-theory.html" class="Module">internal-extensional-type-theory</a>
+
+<a id="2005" class="Comment">--↓ Axioms postulated for the construction.</a>
+
+<a id="2050" class="Keyword">import</a> <a id="2057" href="axiom.html" class="Module">axiom</a>
+
+<a id="2064" class="Comment">--↓ Basic properties of the cofibration classifier.</a>
+
+<a id="2117" class="Keyword">import</a> <a id="2124" href="cofibration.html" class="Module">cofibration</a>
+
+<a id="2137" class="Comment">--↓ Consequences of the axioms expressing tinyness of shapes.</a>
+
+<a id="2200" class="Keyword">import</a> <a id="2207" href="tiny.html" class="Module">tiny</a>
+
+<a id="2213" class="Comment">--↓ Properties of and operations on fibrations.</a>
+
+<a id="2262" class="Keyword">import</a> <a id="2269" href="fibration.html" class="Module">fibration</a>
+
+<a id="2280" class="Comment">--↓ Interpretations of the type formers.</a>
+
+<a id="2322" class="Keyword">import</a> <a id="2329" href="type-former.html" class="Module">type-former</a>
+
+<a id="2342" class="Comment">--↓ Interpretation of the universe type and the univalence axiom.</a>
+
+<a id="2409" class="Keyword">import</a> <a id="2416" href="universe.html" class="Module">universe</a>
+</pre></body></html>

@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html><head><meta charset="utf-8"><title>basic.isomorphism</title><link rel="stylesheet" href="Agda.css"></head><body><pre class="Agda"><a id="1" class="Comment">{-
+
+Definition of isomorphism in the ambient type theory (with inverses up to strict
+equality).
+
+-}</a>
+<a id="101" class="Keyword">module</a> <a id="108" href="basic.isomorphism.html" class="Module">basic.isomorphism</a> <a id="126" class="Keyword">where</a>
+
+<a id="133" class="Keyword">open</a> <a id="138" class="Keyword">import</a> <a id="145" href="basic.prelude.html" class="Module">basic.prelude</a>
+<a id="159" class="Keyword">open</a> <a id="164" class="Keyword">import</a> <a id="171" href="basic.equality.html" class="Module">basic.equality</a>
+
+<a id="187" class="Keyword">private</a> <a id="195" class="Keyword">variable</a>
+  <a id="206" href="basic.isomorphism.html#206" class="Generalizable">ℓ</a> <a id="208" href="basic.isomorphism.html#208" class="Generalizable">ℓ&#39;</a> <a id="211" class="Symbol">:</a> <a id="213" href="Agda.Primitive.html#742" class="Postulate">Level</a>
+
+<a id="220" class="Keyword">infix</a> <a id="226" class="Number">4</a> <a id="228" href="basic.isomorphism.html#272" class="Record Operator">_≅_</a>
+
+<a id="233" class="Comment">--↓ Definition of isomorphism.</a>
+
+<a id="265" class="Keyword">record</a> <a id="_≅_"></a><a id="272" href="basic.isomorphism.html#272" class="Record Operator">_≅_</a> <a id="276" class="Symbol">(</a><a id="277" href="basic.isomorphism.html#277" class="Bound">A</a> <a id="279" class="Symbol">:</a> <a id="281" href="basic.prelude.html#227" class="Primitive">Type</a> <a id="286" href="basic.isomorphism.html#206" class="Generalizable">ℓ</a><a id="287" class="Symbol">)</a> <a id="289" class="Symbol">(</a><a id="290" href="basic.isomorphism.html#290" class="Bound">B</a> <a id="292" class="Symbol">:</a> <a id="294" href="basic.prelude.html#227" class="Primitive">Type</a> <a id="299" href="basic.isomorphism.html#208" class="Generalizable">ℓ&#39;</a><a id="301" class="Symbol">)</a> <a id="303" class="Symbol">:</a> <a id="305" href="basic.prelude.html#227" class="Primitive">Type</a> <a id="310" class="Symbol">(</a><a id="311" href="basic.isomorphism.html#286" class="Bound">ℓ</a> <a id="313" href="Agda.Primitive.html#961" class="Primitive Operator">⊔</a> <a id="315" href="basic.isomorphism.html#299" class="Bound">ℓ&#39;</a><a id="317" class="Symbol">)</a> <a id="319" class="Keyword">where</a>
+ <a id="326" class="Keyword">field</a>
+  <a id="_≅_.to"></a><a id="334" href="basic.isomorphism.html#334" class="Field">to</a>   <a id="339" class="Symbol">:</a> <a id="341" href="basic.isomorphism.html#277" class="Bound">A</a> <a id="343" class="Symbol">→</a> <a id="345" href="basic.isomorphism.html#290" class="Bound">B</a>
+  <a id="_≅_.from"></a><a id="349" href="basic.isomorphism.html#349" class="Field">from</a> <a id="354" class="Symbol">:</a> <a id="356" href="basic.isomorphism.html#290" class="Bound">B</a> <a id="358" class="Symbol">→</a> <a id="360" href="basic.isomorphism.html#277" class="Bound">A</a>
+  <a id="_≅_.inv₁"></a><a id="364" href="basic.isomorphism.html#364" class="Field">inv₁</a> <a id="369" class="Symbol">:</a> <a id="371" class="Symbol">∀</a> <a id="373" href="basic.isomorphism.html#373" class="Bound">a</a> <a id="375" class="Symbol">→</a> <a id="377" href="basic.isomorphism.html#349" class="Field">from</a> <a id="382" class="Symbol">(</a><a id="383" href="basic.isomorphism.html#334" class="Field">to</a> <a id="386" href="basic.isomorphism.html#373" class="Bound">a</a><a id="387" class="Symbol">)</a> <a id="389" href="basic.prelude.html#239" class="Datatype Operator">≡</a> <a id="391" href="basic.isomorphism.html#373" class="Bound">a</a>
+  <a id="_≅_.inv₂"></a><a id="395" href="basic.isomorphism.html#395" class="Field">inv₂</a> <a id="400" class="Symbol">:</a> <a id="402" class="Symbol">∀</a> <a id="404" href="basic.isomorphism.html#404" class="Bound">b</a> <a id="406" class="Symbol">→</a> <a id="408" href="basic.isomorphism.html#334" class="Field">to</a> <a id="411" class="Symbol">(</a><a id="412" href="basic.isomorphism.html#349" class="Field">from</a> <a id="417" href="basic.isomorphism.html#404" class="Bound">b</a><a id="418" class="Symbol">)</a> <a id="420" href="basic.prelude.html#239" class="Datatype Operator">≡</a> <a id="422" href="basic.isomorphism.html#404" class="Bound">b</a>
+
+<a id="425" class="Keyword">open</a> <a id="430" href="basic.isomorphism.html#272" class="Module Operator">_≅_</a> <a id="434" class="Keyword">public</a>
+</pre></body></html>

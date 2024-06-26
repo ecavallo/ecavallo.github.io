@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html><head><meta charset="utf-8"><title>type-former.unit</title><link rel="stylesheet" href="Agda.css"></head><body><pre class="Agda"><a id="1" class="Comment">{-
+
+Fibrancy of the unit type.
+
+-}</a>
+<a id="36" class="Keyword">module</a> <a id="43" href="type-former.unit.html" class="Module">type-former.unit</a> <a id="60" class="Keyword">where</a>
+
+<a id="67" class="Keyword">open</a> <a id="72" class="Keyword">import</a> <a id="79" href="basic.html" class="Module">basic</a>
+<a id="85" class="Keyword">open</a> <a id="90" class="Keyword">import</a> <a id="97" href="axiom.html" class="Module">axiom</a>
+<a id="103" class="Keyword">open</a> <a id="108" class="Keyword">import</a> <a id="115" href="cofibration.html" class="Module">cofibration</a>
+<a id="127" class="Keyword">open</a> <a id="132" class="Keyword">import</a> <a id="139" href="fibration.fibration.html" class="Module">fibration.fibration</a>
+
+<a id="160" class="Keyword">private</a> <a id="168" class="Keyword">variable</a>
+  <a id="179" href="type-former.unit.html#179" class="Generalizable">ℓ</a> <a id="181" class="Symbol">:</a> <a id="183" href="Agda.Primitive.html#742" class="Postulate">Level</a>
+  <a id="191" href="type-former.unit.html#191" class="Generalizable">Γ</a> <a id="193" class="Symbol">:</a> <a id="195" href="basic.prelude.html#227" class="Primitive">Type</a> <a id="200" href="type-former.unit.html#179" class="Generalizable">ℓ</a>
+
+<a id="𝟙FibStr"></a><a id="203" href="type-former.unit.html#203" class="Function">𝟙FibStr</a> <a id="211" class="Symbol">:</a> <a id="213" href="fibration.fibration.html#7152" class="Record">FibStr</a> <a id="220" class="Symbol">(λ</a> <a id="223" class="Symbol">(</a><a id="224" href="type-former.unit.html#224" class="Bound">_</a> <a id="226" class="Symbol">:</a> <a id="228" href="type-former.unit.html#191" class="Generalizable">Γ</a><a id="229" class="Symbol">)</a> <a id="231" class="Symbol">→</a> <a id="233" href="basic.unit.html#79" class="Record">𝟙</a><a id="234" class="Symbol">)</a>
+<a id="236" href="type-former.unit.html#203" class="Function">𝟙FibStr</a> <a id="244" class="Symbol">.</a><a id="245" href="fibration.fibration.html#7300" class="Field">lift</a> <a id="250" class="Symbol">_</a> <a id="252" class="Symbol">_</a> <a id="254" class="Symbol">_</a> <a id="256" class="Symbol">_</a> <a id="258" class="Symbol">.</a><a id="259" href="fibration.fibration.html#4400" class="Field">fill</a> <a id="264" class="Symbol">_</a> <a id="266" class="Symbol">.</a><a id="267" href="cofibration.html#2023" class="Field">out</a> <a id="271" class="Symbol">=</a> <a id="273" href="basic.unit.html#117" class="InductiveConstructor">tt</a>
+<a id="276" href="type-former.unit.html#203" class="Function">𝟙FibStr</a> <a id="284" class="Symbol">.</a><a id="285" href="fibration.fibration.html#7300" class="Field">lift</a> <a id="290" class="Symbol">_</a> <a id="292" class="Symbol">_</a> <a id="294" class="Symbol">_</a> <a id="296" class="Symbol">_</a> <a id="298" class="Symbol">.</a><a id="299" href="fibration.fibration.html#4400" class="Field">fill</a> <a id="304" class="Symbol">_</a> <a id="306" class="Symbol">.</a><a id="307" href="cofibration.html#2035" class="Field">out≡</a> <a id="312" href="type-former.unit.html#312" class="Bound">u</a> <a id="314" class="Symbol">=</a> <a id="316" href="basic.prelude.html#302" class="InductiveConstructor">refl</a>
+<a id="321" href="type-former.unit.html#203" class="Function">𝟙FibStr</a> <a id="329" class="Symbol">.</a><a id="330" href="fibration.fibration.html#7300" class="Field">lift</a> <a id="335" class="Symbol">_</a> <a id="337" class="Symbol">_</a> <a id="339" class="Symbol">_</a> <a id="341" class="Symbol">_</a> <a id="343" class="Symbol">.</a><a id="344" href="fibration.fibration.html#4456" class="Field">cap≡</a> <a id="349" class="Symbol">=</a> <a id="351" href="basic.prelude.html#302" class="InductiveConstructor">refl</a>
+<a id="356" href="type-former.unit.html#203" class="Function">𝟙FibStr</a> <a id="364" class="Symbol">.</a><a id="365" href="fibration.fibration.html#7406" class="Field">vary</a> <a id="370" class="Symbol">_</a> <a id="372" class="Symbol">_</a> <a id="374" class="Symbol">_</a> <a id="376" class="Symbol">_</a> <a id="378" class="Symbol">_</a> <a id="380" class="Symbol">_</a> <a id="382" class="Symbol">_</a> <a id="384" class="Symbol">=</a> <a id="386" href="basic.prelude.html#302" class="InductiveConstructor">refl</a>
+
+<a id="𝟙ᶠ"></a><a id="392" href="type-former.unit.html#392" class="Function">𝟙ᶠ</a> <a id="395" class="Symbol">:</a> <a id="397" href="type-former.unit.html#191" class="Generalizable">Γ</a> <a id="399" href="fibration.fibration.html#7526" class="Function Operator">⊢ᶠType</a> <a id="406" href="Agda.Primitive.html#915" class="Primitive">lzero</a>
+<a id="412" href="type-former.unit.html#392" class="Function">𝟙ᶠ</a> <a id="415" class="Symbol">.</a><a id="416" href="basic.sigma.html#281" class="Field">fst</a> <a id="420" class="Symbol">_</a> <a id="422" class="Symbol">=</a> <a id="424" href="basic.unit.html#79" class="Record">𝟙</a>
+<a id="426" href="type-former.unit.html#392" class="Function">𝟙ᶠ</a> <a id="429" class="Symbol">.</a><a id="430" href="basic.sigma.html#293" class="Field">snd</a> <a id="434" class="Symbol">=</a> <a id="436" href="type-former.unit.html#203" class="Function">𝟙FibStr</a>
+</pre></body></html>
