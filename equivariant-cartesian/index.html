@@ -8,7 +8,8 @@ Formalization of an equivariant cartesian cubical set model of type theory
 This formalization accompanies the article
 
   The equivariant model structure on cartesian cubical sets.
-  Steve Awodey, Evan Cavallo, Thierry Coquand, Emily Riehl, &amp; Christian Sattler
+  Steve Awodey, Evan Cavallo, Thierry Coquand, Emily Riehl, &amp; Christian Sattler.
+  https://arxiv.org/abs/2406.18497
 
 The contents of the formalization are outlined in Appendix A of the article.
 
@@ -40,45 +41,45 @@ axiom.flat for more information).
 
 -}</a>
 
-<a id="1420" class="Keyword">module</a> <a id="1427" href="index.html" class="Module">index</a> <a id="1433" class="Keyword">where</a>
+<a id="1456" class="Keyword">module</a> <a id="1463" href="index.html" class="Module">index</a> <a id="1469" class="Keyword">where</a>
 
-<a id="1440" class="Comment">--↓ The summary module defines the interpretation of homotopy type theory: the judgments,</a>
-<a id="1530" class="Comment">--↓ type formers (including universes), and the univalence axiom. Most results are</a>
-<a id="1613" class="Comment">--↓ imported from elsewhere in the formalization.</a>
+<a id="1476" class="Comment">--↓ The summary module defines the interpretation of homotopy type theory: the judgments,</a>
+<a id="1566" class="Comment">--↓ type formers (including universes), and the univalence axiom. Most results are</a>
+<a id="1649" class="Comment">--↓ imported from elsewhere in the formalization.</a>
 
-<a id="1664" class="Keyword">import</a> <a id="1671" href="summary.html" class="Module">summary</a>
+<a id="1700" class="Keyword">import</a> <a id="1707" href="summary.html" class="Module">summary</a>
 
-<a id="1680" class="Comment">--↓ The prelude: basic constructs of the ambient type theory, such as sigma types, natural</a>
-<a id="1771" class="Comment">--↓ numbers, isomorphisms, etc.</a>
+<a id="1716" class="Comment">--↓ The prelude: basic constructs of the ambient type theory, such as sigma types, natural</a>
+<a id="1807" class="Comment">--↓ numbers, isomorphisms, etc.</a>
 
-<a id="1804" class="Keyword">import</a> <a id="1811" href="basic.html" class="Module">basic</a>
+<a id="1840" class="Keyword">import</a> <a id="1847" href="basic.html" class="Module">basic</a>
 
-<a id="1818" class="Comment">--↓ Syntax for the internal model of extensional type theory where contexts are</a>
-<a id="1898" class="Comment">--↓ interpreted as types and types as families in some universe.</a>
+<a id="1854" class="Comment">--↓ Syntax for the internal model of extensional type theory where contexts are</a>
+<a id="1934" class="Comment">--↓ interpreted as types and types as families in some universe.</a>
 
-<a id="1964" class="Keyword">import</a> <a id="1971" href="internal-extensional-type-theory.html" class="Module">internal-extensional-type-theory</a>
+<a id="2000" class="Keyword">import</a> <a id="2007" href="internal-extensional-type-theory.html" class="Module">internal-extensional-type-theory</a>
 
-<a id="2005" class="Comment">--↓ Axioms postulated for the construction.</a>
+<a id="2041" class="Comment">--↓ Axioms postulated for the construction.</a>
 
-<a id="2050" class="Keyword">import</a> <a id="2057" href="axiom.html" class="Module">axiom</a>
+<a id="2086" class="Keyword">import</a> <a id="2093" href="axiom.html" class="Module">axiom</a>
 
-<a id="2064" class="Comment">--↓ Basic properties of the cofibration classifier.</a>
+<a id="2100" class="Comment">--↓ Basic properties of the cofibration classifier.</a>
 
-<a id="2117" class="Keyword">import</a> <a id="2124" href="cofibration.html" class="Module">cofibration</a>
+<a id="2153" class="Keyword">import</a> <a id="2160" href="cofibration.html" class="Module">cofibration</a>
 
-<a id="2137" class="Comment">--↓ Consequences of the axioms expressing tinyness of shapes.</a>
+<a id="2173" class="Comment">--↓ Consequences of the axioms expressing tinyness of shapes.</a>
 
-<a id="2200" class="Keyword">import</a> <a id="2207" href="tiny.html" class="Module">tiny</a>
+<a id="2236" class="Keyword">import</a> <a id="2243" href="tiny.html" class="Module">tiny</a>
 
-<a id="2213" class="Comment">--↓ Properties of and operations on fibrations.</a>
+<a id="2249" class="Comment">--↓ Properties of and operations on fibrations.</a>
 
-<a id="2262" class="Keyword">import</a> <a id="2269" href="fibration.html" class="Module">fibration</a>
+<a id="2298" class="Keyword">import</a> <a id="2305" href="fibration.html" class="Module">fibration</a>
 
-<a id="2280" class="Comment">--↓ Interpretations of the type formers.</a>
+<a id="2316" class="Comment">--↓ Interpretations of the type formers.</a>
 
-<a id="2322" class="Keyword">import</a> <a id="2329" href="type-former.html" class="Module">type-former</a>
+<a id="2358" class="Keyword">import</a> <a id="2365" href="type-former.html" class="Module">type-former</a>
 
-<a id="2342" class="Comment">--↓ Interpretation of the universe type and the univalence axiom.</a>
+<a id="2378" class="Comment">--↓ Interpretation of the universe type and the univalence axiom.</a>
 
-<a id="2409" class="Keyword">import</a> <a id="2416" href="universe.html" class="Module">universe</a>
+<a id="2445" class="Keyword">import</a> <a id="2452" href="universe.html" class="Module">universe</a>
 </pre></body></html>
