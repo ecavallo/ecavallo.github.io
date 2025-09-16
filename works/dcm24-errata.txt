@@ -1,0 +1,3 @@
+The typing rule for the "fill" constructor in Definition 12 incorrectly allows the variable i to appear in the constraint equations of the boundary ϕ.
+A corrected rule can be found in Definition 2.12 of https://arxiv.org/abs/2402.12169v2. The problem with the original definition is described in Remark 2.14 therein.
+Since the paper was written with the correct rule in mind, nothing else is affected by making this correction.
