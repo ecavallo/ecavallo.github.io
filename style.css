@@ -22,13 +22,13 @@
 }
 
 :root {
-  --color-background: #C6A8FF;
+  --color-background: #30114C;
   --color-text: #000000;
-  --color-field: #EEEEEE;
+  --color-field: #EBEBEB;
   --color-header: #46058C;
   --color-url: #46058C;
   --color-strong-border: #46058C;
-  --color-weak-border: #C6A8FF;
+  --color-weak-border: #A688DF;
 }
 
 @media (prefers-color-scheme: dark) {
