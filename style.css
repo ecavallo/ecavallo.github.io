@@ -1,7 +1,7 @@
 :root {
   --color-background: #30114C;
   --color-text: #000000;
-  --color-field: #EBEBEB;
+  --color-field: #FEFEFE;
   --color-header: #46058C;
   --color-url: #46058C;
   --color-strong-border: #46058C;
@@ -22,8 +22,8 @@
 
 body {
     font-family: 'DejaVu Serif', 'Bitstream Vera Serif', serif;
-    font-size:16px;
     background-color:var(--color-background);
+    font-size:18px;
     color:var(--color-text);
 }
 
@@ -78,7 +78,7 @@ hr {
 }
 
 .zone td:nth-child(1) {
-    width:51px;
+    width:58px;
 }
 .zone td:nth-child(2) {
     width:11px;
@@ -87,17 +87,18 @@ hr {
 }
 
 .field {
-  width:820px;
+  width:950px;
   margin:0 auto;
   margin-bottom:6px;
-  padding:12px;
+  padding:20px;
   border:3px solid var(--color-strong-border);
   background-color:var(--color-field);
 }
 
 .profile {
   float:right;
-  width:200px;
+  width:230px;
   height:auto;
+  margin-top:10px;
   border:3px solid var(--color-weak-border);
 }
